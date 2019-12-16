@@ -9,8 +9,7 @@ div.innerHTML = `
   <img src="${jpg}">
 `
 
-const button = document.createElement('button')
-button.innerText = '懒加载'
+const button = document.getElementById('button')
 button.onclick = () => {
     const promise = import('./lazy')
     promise.then((module) => {
